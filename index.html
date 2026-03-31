@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
@@ -13,13 +13,16 @@
       content="Tour Chicago Eagles, futebol e missões, Lariesca Aquino, campanha missionária, contribuição PIX, projeto cristão, esporte e evangelismo"
     />
     <meta name="theme-color" content="#ff1f8f" />
-    <meta property="og:title" content="Tour Chicago Eagles | Futebol e Missões" />
+    <meta
+      property="og:title"
+      content="Tour Chicago Eagles | Futebol e Missões"
+    />
     <meta
       property="og:description"
       content="Seja um parceiro e apoie uma missão que une futebol, fé e evangelismo."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./1.png" />
+    <meta property="og:image" content="./assets/Lari_fut.jpeg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,6 +46,7 @@
           <a href="#projeto">Projeto</a>
           <a href="#meta">Meta</a>
           <a href="#contribuir">Contribuir</a>
+          <a href="#galeria">Galeria</a>
         </nav>
       </div>
     </header>
@@ -70,7 +74,10 @@
               futebol, fé e evangelismo.
             </p>
 
-            <div class="hero-info" aria-label="Informações principais do projeto">
+            <div
+              class="hero-info"
+              aria-label="Informações principais do projeto"
+            >
               <div class="info-pill">
                 <span class="info-label">Período</span>
                 <strong>04 a 16 de junho</strong>
@@ -91,7 +98,9 @@
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="#contribuir">Contribuir via PIX</a>
+              <a class="btn btn-primary" href="#contribuir"
+                >Contribuir via PIX</a
+              >
               <button class="btn btn-secondary share-trigger" type="button">
                 Compartilhar projeto
               </button>
@@ -133,7 +142,7 @@
         <div class="container split-section">
           <div class="section-media portrait-card">
             <img
-              src="./3.png"
+              src="./assets/Lari_fut.jpeg"
               alt="Retrato de Lariesca Aquino com boné rosa e uniforme esportivo"
             />
           </div>
@@ -141,20 +150,6 @@
           <div class="section-copy">
             <p class="section-tag">Sobre a participante</p>
             <h2>Lariesca Aquino</h2>
-            <div class="identity-list" aria-label="Dados da participante">
-              <div>
-                <span>Nome</span>
-                <strong>Lariesca Aquino</strong>
-              </div>
-              <div>
-                <span>Igreja local</span>
-                <strong>Aliança Cristã e Missionária</strong>
-              </div>
-              <div>
-                <span>Função</span>
-                <strong>Atleta participante</strong>
-              </div>
-            </div>
             <p>
               Lariesca Aquino está se preparando para participar da Tour Chicago
               Eagles, uma experiência missionária e esportiva que une futebol,
@@ -170,42 +165,73 @@
       </section>
 
       <section class="section" id="projeto">
-        <div class="container info-layout">
-          <div class="info-card large-card">
-            <p class="section-tag">Sobre o projeto</p>
-            <h2>Uma missão com propósito dentro e fora das quadras</h2>
-            <p>
-              Este projeto tem como finalidade viabilizar minha participação na
-              Tour Chicago Eagles, uma experiência missionária e esportiva que
-              acontecerá de 04 a 16 de junho, passando por diferentes cidades do
-              estado de São Paulo.
-            </p>
-            <p>
-              Durante esse período, a equipe ficará hospedada em Atibaia, no
-              acampamento Palavra da Vida, que servirá como base para
-              preparação, treinamentos, convivência da equipe e deslocamento
-              para as atividades programadas.
-            </p>
+        <div class="container projeto-showcase">
+          <div class="info-layout projeto-texts">
+            <div class="info-card large-card">
+              <p class="section-tag">Sobre o projeto</p>
+              <h2>Uma missão com propósito dentro e fora das quadras</h2>
+              <p>
+                Este projeto tem como finalidade viabilizar minha participação
+                na Tour Chicago Eagles, uma experiência missionária e esportiva
+                que acontecerá de 04 a 16 de junho, passando por diferentes
+                cidades do estado de São Paulo.
+              </p>
+              <p>
+                Durante esse período, a equipe ficará hospedada em Atibaia, no
+                acampamento Palavra da Vida, que servirá como base para
+                preparação, treinamentos, convivência da equipe e deslocamento
+                para as atividades programadas.
+              </p>
+            </div>
+
+            <div class="info-card accent-card">
+              <p class="section-tag">Quem são os Chicago Eagles?</p>
+              <h2>Futebol como ferramenta de transformação</h2>
+              <p>
+                O time Chicago Eagles é uma organização cristã sem fins
+                lucrativos que utiliza o futebol como ferramenta para impactar
+                vidas, especialmente entre jovens e crianças.
+              </p>
+              <p>
+                A organização faz parte da Missionary Athletes International
+                (MAI), instituição que desenvolve projetos missionários por meio
+                do esporte em diferentes países.
+              </p>
+              <p>
+                Seu trabalho é direcionado ao evangelismo, discipulado e
+                transformação social através do esporte.
+              </p>
+            </div>
           </div>
 
-          <div class="info-card accent-card">
-            <p class="section-tag">Quem são os Chicago Eagles?</p>
-            <h2>Futebol como ferramenta de transformação</h2>
-            <p>
-              O time Chicago Eagles é uma organização cristã sem fins lucrativos
-              que utiliza o futebol como ferramenta para impactar vidas,
-              especialmente entre jovens e crianças.
-            </p>
-            <p>
-              A organização faz parte da Missionary Athletes International
-              (MAI), instituição que desenvolve projetos missionários por meio
-              do esporte em diferentes países.
-            </p>
-            <p>
-              Seu trabalho é direcionado ao evangelismo, discipulado e
-              transformação social através do esporte.
-            </p>
-          </div>
+          <aside class="eagles-carousel" aria-label="Galeria Chicago Eagles">
+            <div class="eagles-carousel-track">
+              <figure class="eagles-slide is-active">
+                <img
+                  src="./assets/Eagles.jpeg"
+                  alt="Equipe Chicago Eagles reunida em atividade esportiva"
+                />
+              </figure>
+              <figure class="eagles-slide">
+                <img
+                  src="./assets/Eagles 2.jpeg"
+                  alt="Momento da equipe Chicago Eagles em quadra"
+                />
+              </figure>
+              <figure class="eagles-slide">
+                <img
+                  src="./assets/Eagles 3.jpeg"
+                  alt="Registro esportivo relacionado ao projeto Chicago Eagles"
+                />
+              </figure>
+            </div>
+
+            <div class="carousel-indicators" aria-hidden="true">
+              <span class="carousel-dot is-active"></span>
+              <span class="carousel-dot"></span>
+              <span class="carousel-dot"></span>
+            </div>
+          </aside>
         </div>
       </section>
 
@@ -264,9 +290,7 @@
             <h2>Investimento para tornar essa missão possível</h2>
             <p>
               O valor arrecadado será destinado à inscrição, alimentação e
-              hospedagem. A participação tem valor original de
-              <strong>US$ 350</strong>, com estimativa de
-              <strong>aproximadamente R$ 2.000,00</strong>.
+              hospedagem, com meta total de <strong>R$ 2.000,00</strong>.
             </p>
             <div class="meta-points" aria-label="Detalhes do investimento">
               <div>
@@ -277,27 +301,32 @@
                 <span>Finalidade</span>
                 <strong>Inscrição, alimentação e hospedagem</strong>
               </div>
-              <div>
-                <span>Valor original</span>
-                <strong>US$ 350</strong>
-              </div>
             </div>
           </div>
 
-          <aside class="progress-card" aria-label="Bloco de progresso da campanha">
+          <aside
+            class="progress-card"
+            aria-label="Bloco de progresso da campanha"
+          >
             <p class="progress-label">Campanha em andamento</p>
             <h3>Meta de arrecadação</h3>
             <div class="progress-values">
               <strong>R$ 0,00</strong>
               <span>de R$ 2.000,00</span>
             </div>
-            <div class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="2000" aria-valuenow="0" aria-label="Progresso ilustrativo da campanha">
-              <span style="width: 22%"></span>
+            <div
+              class="progress-bar"
+              role="progressbar"
+              aria-valuemin="0"
+              aria-valuemax="2000"
+              aria-valuenow="0"
+              aria-label="Progresso da campanha"
+            >
+              <span style="width: 0%"></span>
             </div>
-            <p class="progress-note">
-              Barra ilustrativa pronta para receber atualização real da campanha.
-            </p>
-            <a class="btn btn-primary btn-block" href="#contribuir">Quero contribuir</a>
+            <a class="btn btn-primary btn-block" href="#contribuir"
+              >Quero contribuir</a
+            >
           </aside>
         </div>
       </section>
@@ -305,7 +334,9 @@
       <section class="section section-dark" id="contribuir">
         <div class="container contribution-grid">
           <div class="pix-panel">
-            <p class="section-tag section-tag-light">Contribua para essa missão</p>
+            <p class="section-tag section-tag-light">
+              Contribua para essa missão
+            </p>
             <h2>Contribua via PIX com praticidade</h2>
             <p>
               Sua contribuição ajudará diretamente a viabilizar essa
@@ -322,27 +353,28 @@
               <button class="btn btn-primary" id="copy-pix" type="button">
                 Copiar chave PIX
               </button>
-              <button class="btn btn-secondary light share-trigger" type="button">
+              <button
+                class="btn btn-secondary light share-trigger"
+                type="button"
+              >
                 Compartilhar projeto
               </button>
             </div>
 
-            <p class="feedback-message" id="copy-feedback" aria-live="polite"></p>
+            <p
+              class="feedback-message"
+              id="copy-feedback"
+              aria-live="polite"
+            ></p>
           </div>
 
           <div class="qr-panel">
-            <div class="fake-qr" aria-hidden="true">
-              <!-- Substitua este bloco por uma imagem ou SVG de QR Code real quando estiver disponível. -->
-              <div class="qr-grid">
-                <span></span><span class="filled"></span><span></span><span class="filled"></span><span></span><span class="filled"></span>
-                <span class="filled"></span><span></span><span class="filled"></span><span></span><span class="filled"></span><span></span>
-                <span></span><span class="filled"></span><span class="filled"></span><span></span><span></span><span class="filled"></span>
-                <span class="filled"></span><span></span><span></span><span class="filled"></span><span></span><span class="filled"></span>
-                <span></span><span class="filled"></span><span></span><span class="filled"></span><span class="filled"></span><span></span>
-                <span class="filled"></span><span></span><span class="filled"></span><span></span><span></span><span class="filled"></span>
-              </div>
-            </div>
-            <p>Escaneie quando o QR real for adicionado ou use a chave PIX acima.</p>
+            <img
+              class="qr-image"
+              src="./assets/QRCode.jpeg"
+              alt="QR Code PIX para contribuir com o projeto"
+            />
+            <p>Escaneie o QR Code ou use a chave PIX acima para contribuir.</p>
           </div>
         </div>
       </section>
@@ -379,35 +411,41 @@
         </div>
       </section>
 
-      <!--
       <section class="section" id="galeria">
         <div class="container">
           <div class="section-heading">
             <p class="section-tag">Galeria</p>
             <h2>Uma jornada marcada por esporte, dedicação e propósito</h2>
-            <p>
-              Imagens reais da participante para reforçar a autenticidade e a
-              conexão com este projeto.
-            </p>
           </div>
 
-          <div class="gallery-grid">
+          <div class="gallery-grid gallery-grid-expanded">
             <figure class="gallery-item gallery-item-large">
-              <img src="./2.png" alt="Lariesca Aquino sorrindo em quadra esportiva" />
+              <img
+                src="./galeria/Img 1.jpeg"
+                alt="Lariesca Aquino em momento esportivo"
+              />
             </figure>
             <figure class="gallery-item gallery-item-tall">
-              <img src="./4.png" alt="Composição com fotos esportivas de Lariesca Aquino" />
+              <img
+                src="./galeria/Img 2.jpeg"
+                alt="Registro da participante em atividade esportiva"
+              />
             </figure>
             <figure class="gallery-item">
-              <img src="./1.png" alt="Lariesca Aquino com uniforme rosa e preto em retrato" />
+              <img
+                src="./galeria/Img 3.jpeg"
+                alt="Imagem da participante durante o projeto"
+              />
             </figure>
             <figure class="gallery-item">
-              <img src="./3.png" alt="Foto casual de Lariesca Aquino usando boné rosa" />
+              <img
+                src="./galeria/Img 4.jpeg"
+                alt="Retrato esportivo da participante"
+              />
             </figure>
           </div>
         </div>
       </section>
-      -->
 
       <section class="section final-cta">
         <div class="container final-cta-card">

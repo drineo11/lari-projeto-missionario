@@ -1,8 +1,10 @@
-const pixKey = "lariefut@gmail.com";
+﻿const pixKey = "lariefut@gmail.com";
 const copyButton = document.getElementById("copy-pix");
 const feedback = document.getElementById("copy-feedback");
 const shareButtons = document.querySelectorAll(".share-trigger");
 const siteHeader = document.querySelector(".site-header");
+const carouselSlides = document.querySelectorAll(".eagles-slide");
+const carouselDots = document.querySelectorAll(".carousel-dot");
 
 async function copyPixKey() {
   try {
@@ -72,3 +74,22 @@ window.addEventListener("scroll", updateMobileHeaderState, { passive: true });
 window.addEventListener("resize", updateMobileHeaderState);
 
 updateMobileHeaderState();
+
+if (carouselSlides.length > 1) {
+  let activeSlide = 0;
+
+  function renderCarousel(index) {
+    carouselSlides.forEach((slide, slideIndex) => {
+      slide.classList.toggle("is-active", slideIndex === index);
+    });
+
+    carouselDots.forEach((dot, dotIndex) => {
+      dot.classList.toggle("is-active", dotIndex === index);
+    });
+  }
+
+  window.setInterval(() => {
+    activeSlide = (activeSlide + 1) % carouselSlides.length;
+    renderCarousel(activeSlide);
+  }, 3000);
+}
